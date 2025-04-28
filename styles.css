@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Young-Serif';
+    src: url('./assets/fonts/YoungSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/Outfit-VariableFont_wght.ttf');
+    font-weight: 400 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: #F3E5D7;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+
+    padding: 128px 48px;
+    gap: 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 736px;
+    padding: 40px;
+    gap: 40px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #fff;
+}
+
+.omelette-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+h1 {
+    font-family: 'Young-Serif', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    color: #312E2C;
+    align-self: stretch;
+}
+
+p {
+    font-size: 16px;
+    color: #5F564D;
+    align-self: stretch;
+}
+
+.preparation-time {
+    background-color: #FFF7FB;
+    padding: 24px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.preparation-time h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 100%;
+    color: #7A284E;
+    margin-bottom: 16px;
+}
+
+.preparation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.preparation-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 8px;
+}
+
+.custom-bullet {
+    width: 4px;
+    height: 4px;
+    background-color: #7A284E;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+.preparation-list p {
+    font-size: 16px;
+    color: #5F564D;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Young-Serif', cursive;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    color: #854632;
+    align-self: stretch;
+    margin-bottom: 24px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 8px;
+}
+
+.ul-bullet {
+    width: 4px;
+    height: 4px;
+    background-color: #854632;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+.ingredients-list p {
+    font-size: 16px;
+    color: #5F564D;
+    margin: 0;
+}
+
+.separator {
+    align-self: stretch;
+    height: 1px;
+    background-color: #E3DDD7;
+}
+
+.instructions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instructions-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 8px;
+}
+
+.instructions-list .number {
+    font-weight: 700;
+    color: #854632;
+    min-width: 16px;
+}
+
+.instructions-list .text {
+    font-size: 16px;
+    color: #5F564D;
+}
+
+.nutrition p {
+    margin-bottom: 24px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid #E3DDD7;
+}
+
+.nutrition-table td {
+    padding: 0;
+}
+
+.nutrition-row {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nutrition-table tr:not(:first-child) .nutrition-row {
+    padding-top: 12px;
+}
+
+.nutrition-table tr:not(:last-child) .nutrition-row {
+    padding-bottom: 12px;
+}
+
+.left-text, .right-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.left-text {
+    text-align: left;
+    color: #5F564D;
+}
+
+.right-text {
+    font-weight: 700;
+    color: #854632;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        background-color: #ffffff;
+    }
+    .card {
+        all: unset;
+        display: contents;
+    }
+
+    .omelette-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        object-fit: cover;
+    }
+
+    .text-content {
+        padding: 40px 32px;
+    }
+}
